@@ -13,3 +13,5 @@ There is an interface to review old entries and get insights on what I have been
 2. As a lifelong learner, I want to be able to reply to the prompt with what I have learned, so that daily journaling is as easy as possible.
 
 3. As a lifelong learner, I want to be able to live what I have been learning so that I can reflect on where I have came from.
+
+### This is just a project for learning and practice.
