@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'twilio-ruby'
 require 'dotenv/load'
 
@@ -11,5 +13,5 @@ to = ENV['MOBILE_NUMBER']
 client.messages.create(
   from: from,
   to: to,
-  body: "Hey friend!"
+  body: 'Hey friend!'
 )

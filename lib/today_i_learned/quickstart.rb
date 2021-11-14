@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Download the twilio-ruby library from twilio.com/docs/libraries/ruby
 require 'twilio-ruby'
 require 'sinatra'

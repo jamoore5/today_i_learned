@@ -1,7 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (6.1.4.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     ast (2.4.2)
+    concurrent-ruby (1.1.9)
     dotenv (2.7.6)
     faraday (1.8.0)
       faraday-em_http (~> 1.0)
@@ -22,8 +29,11 @@ GEM
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
+    i18n (1.8.11)
+      concurrent-ruby (~> 1.0)
     jwt (2.3.0)
     minitest (5.14.4)
+    mocha (1.13.0)
     multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
@@ -57,6 +67,9 @@ GEM
       rubocop (~> 1.0)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
+    shoulda-context (2.0.0)
+    shoulda-matchers (5.0.0)
+      activesupport (>= 5.2.0)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
@@ -67,7 +80,10 @@ GEM
       faraday (>= 0.9, < 2.0)
       jwt (>= 1.5, <= 2.5)
       nokogiri (>= 1.6, < 2.0)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
+    zeitwerk (2.5.1)
 
 PLATFORMS
   x86_64-linux
@@ -75,10 +91,13 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   minitest
+  mocha
   rake
   rubocop
   rubocop-minitest
   rubocop-rake
+  shoulda-context
+  shoulda-matchers
   sinatra
   twilio-ruby
 

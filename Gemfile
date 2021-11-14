@@ -11,3 +11,9 @@ gem 'dotenv'
 # twilio requirments
 gem 'sinatra'
 gem 'twilio-ruby'
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'shoulda-context'
+  gem 'mocha'
+end
