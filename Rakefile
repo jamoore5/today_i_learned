@@ -8,7 +8,9 @@ RuboCop::RakeTask.new(:lint) do |task|
   task.fail_on_error = false
 end
 
-
+task :send_prompt do
+  ruby 'lib/today_i_learned/send_sms.rb'
+end
 
 task :run do
   ruby 'lib/today_i_learned.rb'
